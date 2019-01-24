@@ -1,0 +1,43 @@
+{
+  "about": {
+    "problemID": "bibtex_problem",
+    "problemName": "bibtex_problem",
+    "problemDescription": "Katakis, G. Tsoumakas, I. Vlahavas, \"Multilabel Text Classification for Automated Tag Suggestion\", Proceedings of the ECML/PKDD 2008 Discovery Challenge, Antwerp, Belgium, 2008",
+    "taskType": "classification",
+    "taskSubType": "multilabel",
+    "problemVersion": "2.0",
+    "problemSchemaVersion": "3.2.0"
+  },
+  "inputs": {
+    "data": [
+      {
+        "datasetID": "bibtex_dataset",
+        "targets": [
+          {
+            "targetIndex": 0,
+            "resID": "learningData",
+            "colIndex": 1837,
+            "colName": "label-set"
+          }
+        ]
+      }
+    ],
+    "dataSplits": {
+      "method": "holdOut",
+      "testSize": 0.2,
+      "stratified": true,
+      "numRepeats": 0,
+      "randomSeed": 42,
+      "splitsFile": "dataSplits.csv"
+    },
+    "performanceMetrics": [
+      {
+        "metric": "sample-average-f1Macro"
+      }
+    ]
+  },
+  "expectedOutputs": {
+    "predictionsFile": "predictions.csv"
+  }
+}
+
