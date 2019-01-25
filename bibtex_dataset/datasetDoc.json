@@ -14710,7 +14710,7 @@
                     ]
                 }, 
                 {
-                    "colIndex": 1837, 
+                    "colIndex": "1837", 
                     "colName": "label-set", 
                     "colType": "string", 
                     "role": [
